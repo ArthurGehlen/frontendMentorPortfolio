@@ -1,0 +1,59 @@
+.badge {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.2rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.css {
+  background-color: hsl(220, 70%, 55%);
+}
+
+.html {
+  background-color: hsl(12, 70%, 55%);
+}
+
+.scss {
+  background-color: hsl(330, 65%, 55%);
+}
+
+.javascript {
+  background-color: hsl(45, 85%, 55%);
+}
+
+.api {
+  background-color: hsl(160, 55%, 45%);
+}
+
+.react {
+  background-color: hsl(190, 80%, 55%);
+}
+
+.json {
+  background-color: hsl(221, 15%, 45%);
+}
+
+.newbie {
+  background-color: hsl(120, 55%, 50%);
+}
+
+.junior {
+  background-color: hsl(45, 85%, 55%);
+}
+
+.intermediate {
+  background-color: hsl(30, 85%, 55%);
+}
+
+.advanced {
+  background-color: hsl(0, 75%, 55%);
+}
+
+.popular {
+  background-color: hsl(45, 85%, 55%);
+  color: hsl(223, 14%, 10%);
+}

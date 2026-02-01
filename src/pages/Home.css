@@ -1,0 +1,13 @@
+.page_description {
+  margin: 2rem 0;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.projects_grid {
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  gap: 2rem;
+}
