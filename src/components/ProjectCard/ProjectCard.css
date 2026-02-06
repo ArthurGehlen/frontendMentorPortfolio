@@ -36,6 +36,10 @@
   );
 }
 
+.project_thumbnail:hover::after {
+  opacity: 0.7;
+}
+
 .project_thumbnail img {
   width: 100%;
   height: 12.5rem;

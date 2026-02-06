@@ -1,6 +1,7 @@
 // Utils
 import "./Badge.css";
 
+// Images - Badges
 import html_icon from "../../assets/html_icon.svg";
 import css_icon from "../../assets/css_icon.svg";
 import api_icon from "../../assets/api_icon.svg";
@@ -19,13 +20,15 @@ const ICONS = {
   json: json_icon,
 };
 
-const Badge = ({ label, variant }) => {
-  const icon = ICONS[variant];
+const Badge = ({ label }) => {
+  const icon = ICONS[label.toLowerCase()];
 
   return (
-    <span className={`badge ${variant || ""}`}>
+    <span className={`badge ${label.toLowerCase() || ""}`}>
       {icon && <img src={icon} alt={`${label} icon`} width="30%" />}
-      {label}
+      {label.length >= 5
+        ? label.charAt(0).toUpperCase() + label.slice(1) // eu amo javascript :)
+        : label.toUpperCase()}
     </span>
   );
 };

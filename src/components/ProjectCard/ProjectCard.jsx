@@ -29,8 +29,7 @@ const ProjectCard = ({ project_obj }) => {
             {project_obj.stack.map((tag) => (
               <Badge
                 key={tag}
-                label={tag.toUpperCase()}
-                variant={tag.toLowerCase()}
+                label={tag}
               />
             ))}
 
