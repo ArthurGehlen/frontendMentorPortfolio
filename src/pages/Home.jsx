@@ -5,13 +5,16 @@ import "./Home.css";
 
 // Components
 import ProjectCard from "../components/ProjectCard/ProjectCard";
+import Loading from "../components/Loading/Loading";
 import Header from "../components/Header/Header";
 
 const Home = () => {
-  const { projects, loading } = useProjects();
+  const { projects, loading, error } = useProjects();
 
   /* LEMBRAR DE NÃO DEIXAR CONSOLE.LOG() NO CÓDIGO :) */
-  if (loading) return <p>Carregando...</p>;
+
+  if (loading) return <Loading />;
+  if (error) return <p className="error_message">{error}</p>;
 
   return (
     <div className="home_page">

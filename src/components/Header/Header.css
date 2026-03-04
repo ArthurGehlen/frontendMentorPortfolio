@@ -23,6 +23,7 @@ header {
 
 .user_area img {
   border-radius: 50%;
+  max-width: 8rem;
 }
 
 @media screen and (max-width: 616px) {

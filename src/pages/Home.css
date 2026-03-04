@@ -11,3 +11,13 @@
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
   gap: 2rem;
 }
+
+.error_message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: hsl(6, 78%, 57%);
+  font-size: 1rem;
+  text-align: center;
+}

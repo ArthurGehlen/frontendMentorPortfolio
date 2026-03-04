@@ -9,16 +9,22 @@ export function useProjects() {
 
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function load() {
-      const data = await fetch_frontendmentor_projects();
-      setProjects(data);
-      setLoading(false);
+      try {
+        const data = await fetch_frontendmentor_projects();
+        setProjects(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
     }
 
     load();
   }, []);
 
-  return { projects, loading };
+  return { projects, loading, error };
 }
